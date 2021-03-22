@@ -30,3 +30,22 @@ nav ul li {
 }
 
 /*/ ///////////section recherche//////////////////////////////////*/
+.footer-two {
+  background: slategray;
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px;
+}
+.nosengagements {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+footer h3 {
+  padding: 10px;
+}
+footer ul li {
+  padding: 10px;
+}
+footer {
+  margin-top: 15px;
+}
