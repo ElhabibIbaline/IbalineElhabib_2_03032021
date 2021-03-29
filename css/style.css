@@ -6,30 +6,148 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  width: 95%;
-  margin: 0 auto;
+  font-family: "Raleway";
+  /*width: 100%;*/
+  /* background-color: red;*/
+
+  width: 1600px;
 }
 
 /*/////////////////////LE HEADER///////////////////////////////////*/
+
 header {
-  background: rgb(64, 255, 0);
-  height: 80px;
+  width: 95%;
+  margin: 25px auto;
+  /* background-color: yellow;*/
 }
+
 header li {
-  display: inline;
-  margin: 20px;
+  margin-left: 50px;
 }
+
 #logo {
-  width: 100px;
-  padding-top: 10px;
+  width: 150px;
+  padding-left: 10px;
 }
 nav ul li {
   float: right;
-  margin-top: -30px;
+
+  border-top: 5px solid #003eb1;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
-/*/ ///////////section recherche//////////////////////////////////*/
+/*/ //////////////partie recherche///////////////////////////////////////////*/
+.formulaire {
+  font-size: 1.5em;
+}
+.placeholder {
+  font-size: 1em;
+  padding: 10px;
+  border: none;
+}
+.fa-map-marker-alt {
+  background-color: #f2f2f2;
+  border-radius: 15px 0 0 15px;
+  padding: 10px;
+}
+.fa-info-circle {
+  background-color: #0065fc;
+  border: 0.05 solid gray;
+  border-radius: 50%;
+
+  color: white;
+}
+.gray {
+  color: #f2f2f2;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 0 15px 15px 0;
+  background-color: #0065fc;
+  color: #fff;
+}
+.titre-recherche h1 {
+  margin-bottom: 10px;
+}
+.filtre-recherche {
+  /*display: flex;*/
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 1.2em;
+
+  /*margin-left: 20px;*/
+}
+.filtres {
+  font-size: 1.5em;
+  margin-bottom: -25px;
+  margin-top: 20px;
+}
+#filtres {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: baseline;
+}
+.info {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.fa-dog,
+.fa-heart,
+.fa-child,
+.fa-money-bill-wave {
+  color: #0065fc;
+  background-color: rgb(195, 206, 228);
+  padding: 20px;
+  border-radius: 45px;
+  border: 0.01px solid gray;
+  margin-bottom: -1px;
+  margin-right: 10px;
+}
+.economique,
+.familial,
+.romantique,
+.animaux {
+  font-size: 1.5em;
+  margin-left: 25px;
+  border: 0.09px solid gray;
+  border-radius: 45px;
+  padding-right: 30px;
+}
+/*
+.fa-heart{
+  color: #0065FC ;
+  background-color: rgb(195, 206, 228);
+  padding: 25px;
+  border-radius: 55px;
+  margin-bottom: -10px;
+  margin-right: 10px;
+  }
+  /*
+.romantique {
+  font-size: 1.5em;
+  margin-left: 25px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  padding-right: 20px;
+}*/
+.section-recherche p {
+  padding-bottom: 15px;
+}
+.section-recherche {
+  /*width: 95%;*/
+
+  margin: 25px;
+}
+
+/*/ ///////////fin section recherche//////////////////////////////////*/
+
+/*/ ///////////footer//////////////////////////////////*/
+
 .footer-two {
   background: slategray;
   display: flex;

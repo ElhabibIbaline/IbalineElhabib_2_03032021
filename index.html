@@ -7,59 +7,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservia 2021</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/4fc20de488.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
 
-    <!--///////////////////////////HEADER////////////////////////-->
-    <header>
-      <p>
-        <img id="logo" src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
-      </p>
+    <!--///////////////////////////HEADER/////////////////////////////////////////////////////////////////////////-->
 
-      <nav>
-        <ul>
-          <li>S'incrire</li>
-          <li>
-            <a href="#section-hebergements"> Hébergements </a>
-          </li>
-          <li>
-            <a href="#activités">Activités</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+         <header class="headernav">
+          <div class="logo">
+           <p>
+             <img
+               id="logo"
+               src="images/logo/Reservia@3x.png"
+               alt="Logo Reservia"
+             />
+           </p>
+          </div>
+   
+         <div class="nav">
+           <nav>
+             <ul>
+               <li>S'incrire</li>
+               <li>
+                 <a href="#footer-two"> Hébergements </a>
+               </li>
+               <li>
+                 <a href="#activités">Activités</a>
+               </li>
+             </ul>
+           </nav>
+         </div>
+         </header>
+   
+         <!--////////////////////////////////////////////CONTAINER///////////////////////////////////////////////////////////////-->
 
-       <!--///////////////////////////MAIN////////////////////////-->
-        <!--section-RECHERCHE-->
-    <section class="section-recherche">
-      <div class="titre-recherche">
-        <h1>Trouver votre hebergement pour des vacances de reve</h1>
-        <p>en plein centre ville ou en plein nature</p>
-      </div>
+        <div id="container">
 
-      <form class="formulaire" action="proceedFrom.html" method="post">
-        <input
-          class="placeholder"
-          type="recherche"
-          placeholder="Marseille, France"
-        />
-        <button class="button">Recherche</button>
-      </form>
 
-      <div class="filtre-recherche">
-        <span class="filtres">Filtres</span>
-        <span class="economique">Economique</span>
-        <span class="familiale">Familial</span>
-        <span class="romantique">Romantique</span>
-        <span class="animaux">Animaux autorisés</span>
-      </div>
-      <div>
-        <p>Plus de 500 logements disponibles dans cette ville</p>
-      </div>
-    </section>
+          <!--///////////////////////////RECHERCHES ET FILTRES///////////////////////////////////////////////////////////////-->
+          <section class="section-recherche">
+            <div class="titre-recherche">
+              <h1>Trouver votre hebergement pour des vacances de reve</h1>
+              <p>En plein centre ville ou en plein nature</p>
+            </div>
+    
+            <form class="formulaire" action="proceedFrom.html" method="post">
+              <span class="map"><i class="fas fa-map-marker-alt"></i> </span>
+              <input
+                class="placeholder"
+                type="recherche"
+                placeholder="Marseille, France"
+              />
+              <button class="button">Rechercher</button>
+            </form>
+    
+     <!--       <div class="filtre-recherche"> </div>-->
+    
+       <div id="filtres">
+      
+          <div class="filtres">
+            </span>Filtres</span>
+          </div>
+    
+          <div class="economique">
+            <i class="fas fa-money-bill-wave"></i> <span>Economique</span>
+          </div>
+          <div class="familial">
+            <i class="fas fa-child"></i><span>Familial</span>
+          </div>
+          <div class="romantique">
+            <i class="fas fa-heart"></i>  <span>Romantique</span>
+          </div>
+          <div class="animaux">
+            <i class="fas fa-dog"></i> <span>Animaux autorisés</span>
+          </div>
+      
+       <div class="info">
+        <i class="fas fa-info-circle"></i> Plus de 500 logements disponibles
+        dans cette ville
+    
+       </div>
+    
+              
+         
+          </section>
+          <!--///////////////////////////FIN FIN RECHERCHERSE///////////////////////////////////////////////////////////////-->
+          <!--////////////////HEBERGEMENTS///////////HEBERGEMENTS///////////////////////////////////////////////////////////////-->
 
-   <!--section-hebergements-hotel-1-->
     <div class="section-hebergements-titre">
       <h2>Hebergements à Marseille</h2>
     </div>
