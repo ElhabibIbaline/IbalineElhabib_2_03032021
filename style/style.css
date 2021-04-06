@@ -24,6 +24,7 @@ body {
 .wrapper {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 20px;
   /*background-color: brown;*/
 }
 :root {
@@ -37,6 +38,10 @@ body {
   --transparent: rgba(255, 255, 255, 0.4);
 }
 /*<header>*/
+header img{
+max-width: 7rem;
+min-width: 3rem;
+}
 nav a {
   color: var(--noir);
 }
@@ -66,6 +71,144 @@ nav {
   border-top: 3px solid var(--bleu);
   color: #0065fc;
 }
+
+
+/*partie fltres et recherche*/
+/*RECCHERCHE*/
+.section-recherche {
+  margin-top: 2rem;
+}
+
+.titre-recherche p {
+  color: gray;
+}
+
+.titre-recherche {
+  margin-bottom: 1.5rem;
+}
+
+.filtre-recherche {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.2em;
+}
+
+.fa-map-marker-alt {
+  background-color: var(--gris);
+  padding: 1rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+  border-right: none;
+  border-right: none;
+}
+input {
+  background-color: var(--blanc);
+  margin: 0;
+  border-bottom: 0.15rem solid var(--gris);
+  border-top: 0.15rem solid var(--gris);
+  border-left: none;
+  border-right: none;
+  width: 20rem;
+  height: 3rem;
+  padding-left: 1rem;
+  color: var(--noir);
+}
+.sersh-placeholder:hover {
+  background-color: var(--bleu);
+}
+
+.formulaire-recherche {
+  display: flex;
+}
+
+.button {
+  padding: 0.9rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+  background-color: var(--bleu);
+  color: var(--blanc);
+  border-bottom: 0.15rem solid var(--gris);
+  border-top: 0.15rem solid var(--gris);
+  border-left: none;
+  border-right: none;
+  height: 3rem;
+  cursor: pointer;
+}
+/*partie filtres*/
+.titre-recherche h1 {
+  margin-bottom: 1rem;
+}
+.filtre-recherche {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.2em;
+}
+.filtre {
+  font-size: 1.5em;
+  /* margin-bottom: -2.5rem;*/
+  /*  margin-top: 2rem;*/
+}
+#filtres {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.fa-info-circle {
+  background-color: var(--bleu);
+  border: 0.1rem solid var(--blanc); /*avoir */
+  border-radius: 5rem;
+
+  color: var(--blanc);
+}
+.resultats {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: grey;
+}
+
+.fa-dog,
+.fa-heart,
+.fa-child,
+.fa-money-bill-wave {
+  color: #0065fc;
+  background-color: var(--bleu-claire);
+  padding: 1rem;
+  border-radius: 4rem;
+  border: none;
+  /*  margin-bottom: -1rem;*/
+  margin-right: 0.8rem;
+}
+.economique,
+.familial,
+.romantique,
+.animaux {
+  font-size: 1.5rem;
+  margin-left: 2.5rem;
+  border: 0.1rem solid var(--gris);
+  border-left: none;
+  border-radius: 4rem;
+  padding-left: 0.2rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+.economique:hover {
+  background-color: var(--bleu-claire);
+}
+
+.familial:hover {
+  background-color: var(--bleu-claire);
+}
+
+.romantique:hover {
+  background-color: var(--bleu-claire);
+}
+.animaux:hover {
+  background-color: var(--bleu-claire);
+}
+
+
 @media screen and (max-width: 400px) {
   .lien-hosting {
     grid-row: 2/3;
@@ -94,4 +237,18 @@ nav {
   nav {
     align-items: center;
   }
+  #filtres{
+   /* background-color: chartreuse;*/
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filtre{
+    margin: 10px;
+  }
+.economique,
+.familial,
+.romantique,
+.animaux {
+  margin-left:0;
+}
 }
