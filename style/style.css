@@ -207,9 +207,239 @@ input {
 .animaux:hover {
   background-color: var(--bleu-claire);
 }
+/*DEBUT HEBERGEMENT*/
+
+.hosting {
+  display: flex;
+  justify-content: space-between;
+} /*
+.carteHM {
+  height: 100%;
+}*/
+.etoiles,
+.prix {
+  padding-top: 15px;
+}
+
+.cartesHM {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: /*repeat (3, 1fr)*/auto auto auto;
+  grid-template-rows: repeat (4, 1fr);
+  /*  margin: 30px;*/
+  padding: 30px;
+  width: 66%;
+  grid-gap: 35px;
+}
+.cartesHM img {
+  width: 100%;
+  height: 10rem;
+
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.carteHM {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  /*margin: 30px;*/
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 33%;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.1s;
+}
+
+aside img {
+  width: 200px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.1s;
+}
 
 
-@media screen and (max-width: 400px) {
+.aside2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.etoiles,
+.etoiles2 {
+  color: #0065fc;
+}
+
+.titre1 {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  padding: 10px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+.carte1 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.carte2 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.carte3 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.carte4 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+.carte5 {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.carte6 {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+.Plus {
+  grid-row: 4/5;
+  grid-column: 1/4;
+  padding: 10px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.carteAside {
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  border-radius: 15px 0px 0px 15px;
+  width: 100%;
+}
+.headerAside {
+  display: flex;
+  margin-left: 20px;
+  padding-bottom: 15px;
+  justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1440px){
+  aside img {
+    width: 8rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+  aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .aside2 {
+   font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1170px){
+  .cartesHM img {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .cartesHM {
+    font-size: 0.9rem;
+  }
+  aside img {
+    width: 5rem;
+    height: 7rem;
+    object-fit: cover;
+  }
+  aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .aside2 {
+   font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 868px){
+  .cartesHM img {
+    width: 9rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .cartesHM {
+    font-size: 0.7rem;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .titre1, .plus {
+    width: 100%;
+  }
+  aside img {
+    width: 4rem;
+    height: 6rem;
+    object-fit: cover;
+  }
+  aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  .aside2 {
+   font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 655px){
+.hosting{
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.cartesHM img {
+  width: 11rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.cartesHM {
+width: 100%;
+}
+aside{
+  order:-2;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+aside img {
+  width: 9rem;
+  height: 11rem;
+  object-fit: cover;
+}
+.aside2 {
+  font-size: 1rem;
+  margin-left: 1rem;
+ }
+}
+
+
+@media screen and (max-width: 516px) {
   .lien-hosting {
     grid-row: 2/3;
     grid-column: 1/2;
@@ -250,5 +480,14 @@ input {
 .romantique,
 .animaux {
   margin-left:0;
+}
+.cartesHM img {
+  width: 100%;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.cartesHM {
+  font-size: 1rem;
 }
 }
