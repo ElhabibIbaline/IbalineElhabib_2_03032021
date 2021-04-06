@@ -1,0 +1,97 @@
+/*selecteurs fixes*/
+*,
+* ::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62, 5%;
+}
+body {
+  font-family: "Raleway";
+  font-weight: 500; 
+  width: 100%; /taille du body!?*/
+  max-width: 1700px;
+  margin: 0 auto;
+  background-color: var(--blanc);
+  font-size: 1rem; /*faire une autre recherche sur l'iunité de mesur rem*/
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  /*background-color: brown;*/
+}
+:root {
+  --bleu: #0065fc; /* couleur de la charte: le bleu*/
+  --bleu-claire: #deebff; /* sa la version claire du bleu*/
+
+  --gris: #f2f2f2; /*3eme couleur de la charte le gris pour le fond*/
+
+  --blanc: #ffffff;
+  --noir: #000000;
+  --transparent: rgba(255, 255, 255, 0.4);
+}
+/*<header>*/
+nav a {
+  color: var(--noir);
+}
+
+nav {
+/*  background-color: var(--gris);*/
+  display: grid;
+
+  grid-template-columns: 1fr auto auto auto;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lien {
+  padding: 1.5rem;
+}
+.lien-hosting {
+  border-top: 3px solid var(--bleu);
+}
+.inscription {
+  padding: 1.5rem 0 1.5rem 2rem;
+  color: var(--bleu);
+  font-weight: bold;
+}
+.lien:hover {
+  border-top: 3px solid var(--bleu);
+  color: #0065fc;
+}
+@media screen and (max-width: 400px) {
+  .lien-hosting {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    color: var(--bleu);
+    border-bottom: var(--bleu);
+    border-bottom: 3px solid var(--bleu);
+  }
+  .lien-activity {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .inscription {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .lien:hover {
+    border-bottom: 3px solid var(--bleu);
+    border-top: none;
+    color: #0065fc;
+  }
+  .lien {
+    justify-content: center;
+    border-top: none;
+  }
+  nav {
+    align-items: center;
+  }
+}
