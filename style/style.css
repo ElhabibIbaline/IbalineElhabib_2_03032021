@@ -4,7 +4,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; 
+  box-sizing: inherit;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -14,13 +14,14 @@ html {
 }
 body {
   font-family: "Raleway";
-  font-weight: 500; 
-  width: 100%; /taille du body!?*/
+  font-weight: 500;
+  width: 100%; /*taille du body!?*/
   max-width: 1700px;
   margin: 0 auto;
   background-color: var(--blanc);
-  font-size: 1rem; /*faire une autre recherche sur l'iunité de mesur rem*/
-}
+  font-size: 1rem;
+  color: var(--noir);
+} /*faire une autre recherche sur l'iunité de mesur rem*/
 .wrapper {
   width: 95%;
   margin: 0 auto;
@@ -38,16 +39,16 @@ body {
   --transparent: rgba(255, 255, 255, 0.4);
 }
 /*<header>*/
-header img{
-max-width: 7rem;
-min-width: 3rem;
+header img {
+  max-width: 7rem;
+  min-width: 3rem;
 }
-nav a {
+a {
   color: var(--noir);
 }
 
 nav {
-/*  background-color: var(--gris);*/
+  /*  background-color: var(--gris);*/
   display: grid;
 
   grid-template-columns: 1fr auto auto auto;
@@ -61,6 +62,7 @@ nav {
 }
 .lien-hosting {
   border-top: 3px solid var(--bleu);
+  color: var(--bleu);
 }
 .inscription {
   padding: 1.5rem 0 1.5rem 2rem;
@@ -71,7 +73,6 @@ nav {
   border-top: 3px solid var(--bleu);
   color: #0065fc;
 }
-
 
 /*partie fltres et recherche*/
 /*RECCHERCHE*/
@@ -180,6 +181,9 @@ input {
   /*  margin-bottom: -1rem;*/
   margin-right: 0.8rem;
 }
+.gray {
+  color: var(--gris);
+}
 .economique,
 .familial,
 .romantique,
@@ -219,15 +223,16 @@ input {
 .etoiles,
 .prix {
   padding-top: 15px;
+  color: gray;
 }
 
 .cartesHM {
-  background-color: #f2f2f2;
+  background-color: var(--gris);
   border-radius: 20px;
   display: grid;
-  grid-template-columns: /*repeat (3, 1fr)*/auto auto auto;
+  grid-template-columns: /*repeat (3, 1fr)*/ auto auto auto;
   grid-template-rows: repeat (4, 1fr);
-  /*  margin: 30px;*/
+  margin-right: 30px;
   padding: 30px;
   width: 66%;
   grid-gap: 35px;
@@ -246,6 +251,11 @@ input {
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.carteHM2 {
+  padding-left: 0.7rem;
 }
 
 aside {
@@ -257,6 +267,7 @@ aside {
   width: 33%;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   transition-duration: 0.1s;
+  margin-left: 1rem;
 }
 
 aside img {
@@ -267,7 +278,6 @@ aside img {
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   transition-duration: 0.1s;
 }
-
 
 .aside2 {
   display: flex;
@@ -322,11 +332,11 @@ aside img {
 
 .carteAside {
   display: flex;
-  background-color: #fff;
+  background-color: var(--blanc);
   padding: 10px;
   margin-right: 40px;
   margin-bottom: 40px;
-  border-radius: 15px 0px 0px 15px;
+  border-radius: 1.5rem;
   width: 100%;
 }
 .headerAside {
@@ -396,41 +406,50 @@ aside img {
   object-fit: cover;
 }
 /* footer*/
-footer{
-  margin:0;
+footer {
+  margin: 0;
   background-color: var(--gris);
 }
-.footer{
+footer h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.footer {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
- 
 }
-.div-footer{
-  padding:1rem 10rem 1rem 0;
-  margin:1rem 10rem 1rem 0;
-}
-footer li, footer h3{
+
+.nosengagements {
+  padding-right: 10rem;
+  padding-left: 10rem;
+} /*
+.div-footer {
+  padding-right: 6rem;
+  margin-right: 4rem;
+}*/
+footer li,
+footer h3 {
   padding: 10px 0 10px 0;
 }
 
 /*@media */
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) {
   aside img {
     width: 8rem;
     height: 10rem;
     object-fit: cover;
   }
-  aside{
+  aside {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
   .aside2 {
-   font-size: 0.8rem;
+    font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 1170px){
+@media screen and (max-width: 1170px) {
   .cartesHM img {
     width: 100%;
     height: 8rem;
@@ -445,16 +464,16 @@ footer li, footer h3{
     height: 7rem;
     object-fit: cover;
   }
-  aside{
+  aside {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
   .aside2 {
-   font-size: 0.6rem;
+    font-size: 0.6rem;
   }
 }
-@media screen and (max-width: 868px){
+@media screen and (max-width: 868px) {
   .cartesHM img {
     width: 9rem;
     height: 7rem;
@@ -468,7 +487,8 @@ footer li, footer h3{
     flex-wrap: wrap;
     justify-content: center;
   }
-  .titre1, .plus {
+  .titre1,
+  .plus {
     width: 100%;
   }
   aside img {
@@ -476,14 +496,14 @@ footer li, footer h3{
     height: 6rem;
     object-fit: cover;
   }
-  aside{
+  aside {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 10px;
   }
   .aside2 {
-   font-size: 0.6rem;
+    font-size: 0.6rem;
   }
   .activity-1 img,
   .activity-4 img {
@@ -497,39 +517,43 @@ footer li, footer h3{
     height: 120px;
     object-fit: cover;
   }
+  .footer {
+    flex-direction: column;
+  }
+  .nosengagements {
+    padding: 0;
+    margin: 0;
+  }
 }
-@media screen and (max-width: 655px){
-.hosting{
-  flex-direction: column;
-  justify-content: space-evenly;
+@media screen and (max-width: 655px) {
+  .hosting {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .cartesHM img {
+    width: 11rem;
+    height: 9rem;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .cartesHM {
+    width: 100%;
+  }
+  aside {
+    order: -2;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  aside img {
+    width: 9rem;
+    height: 11rem;
+    object-fit: cover;
+  }
+  .aside2 {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
 }
-.cartesHM img {
-  width: 11rem;
-  height: 7rem;
-  object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
-}
-.cartesHM {
-width: 100%;
-}
-aside{
-  order:-2;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-aside img {
-  width: 9rem;
-  height: 11rem;
-  object-fit: cover;
-}
-.aside2 {
-  font-size: 1rem;
-  margin-left: 1rem;
- }
-
-}
-
-
 
 @media screen and (max-width: 516px) {
   .lien-hosting {
@@ -538,6 +562,12 @@ aside img {
     color: var(--bleu);
     border-bottom: var(--bleu);
     border-bottom: 3px solid var(--bleu);
+  }
+  .carteHM img {
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
   }
   .lien-activity {
     grid-row: 2/3;
@@ -559,39 +589,38 @@ aside img {
   nav {
     align-items: center;
   }
-  #filtres{
-   /* background-color: chartreuse;*/
+  #filtres {
+    /* background-color: chartreuse;*/
     flex-direction: column;
     align-items: flex-start;
   }
-  .filtre{
+  .filtre {
     margin: 10px;
   }
-.economique,
-.familial,
-.romantique,
-.animaux {
-  margin-left:0;
-}
-.cartesHM img {
-  width: 100%;
-  height: 7rem;
-  object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
-}
-.cartesHM {
-  font-size: 1rem;
-}
-.activity {
-  /*background-color: #9e8282;*/
-display: flex;
-flex-direction: column;
-font-size: 1.2rem;
-}
-.activity img {
-  width: 100%;
-  height: 11rem;
-  object-fit: cover;
-}
-
+  .economique,
+  .familial,
+  .romantique,
+  .animaux {
+    margin-left: 0;
+  }
+  .cartesHM img {
+    width: 100%;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .cartesHM {
+    font-size: 1rem;
+  }
+  .activity {
+    /*background-color: #9e8282;*/
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+  .activity img {
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+  }
 }
