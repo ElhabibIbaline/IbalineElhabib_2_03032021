@@ -105,8 +105,7 @@ color: #0065fc;
   order: -1;
   width: 50%;
   padding-right: 3rem;
-  }
-  
+  }  
   .inscription {
   padding: 2rem 0 2rem 2rem;
   order: -1;
@@ -124,10 +123,22 @@ color: #0065fc;
   color: var(--bleu);
   border-top: none;
   }
-  .recherche p{
+ .recherche p{
   padding: 1rem 0 1rem 0;
   }
+  button .fa-search{
+    font-size: 1.3rem;
 
+    background-color: var(--bleu);
+  }
+  .button {
+    color: var(--blanc);
+    background-color: var(--bleu);
+    font-size: 0;
+    border-radius: 1rem;
+    width:3.5rem;
+    cursor:pointer;
+    }
   }
 /*-----------------------partie recherche--------------------******************************************-*/
 main .recherche {
@@ -168,6 +179,7 @@ padding-left: 0.7rem;
 height: 2.9rem;
 color: var(--noir);
 }
+
 button {
 color: var(--blanc);
 background-color: var(--bleu);
@@ -176,6 +188,8 @@ border-radius: 0rem 1rem 1rem 0rem;
 border: 1px solid var(--gris);
 border-left: none;
 padding: 1rem;
+font-weight: 600;
+font-size: 1rem;
 }
 
 /*-----------------------FILTRES---------------------*/
@@ -321,6 +335,12 @@ display: flex;
 .aside-header{
 display: flex;
 justify-content: space-between;
+}
+.fa-chart-line{
+  font-size:1.7rem;
+}
+.fa-search{
+  font-size: 0;
 }
 .hebergementsPopulairesInformations{
 display:flex;
