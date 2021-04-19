@@ -13,7 +13,6 @@ font-size: 62,5%;
 body {
 font-family: "Raleway";
 width: 100%; /* taille du body!? */
-max-width: 1700px;
 margin: 0 auto;
 background-color: var(--blanc);
 color: var(--noir);
