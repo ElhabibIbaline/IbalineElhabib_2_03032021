@@ -6,9 +6,7 @@ box-sizing: border-box;
 text-decoration: none;
 list-style: none;
 }
-html {
-font-size:62,5%;
-}
+
 body {
 font-family:"Raleway", serif;
 width: 100%; /* taille du body!? */
@@ -90,7 +88,7 @@ padding-left: 2rem;
 border-top: 5px solid var(--bleu);
 color: #0065fc;
 }
-/* media screen header ***********************************************************************/
+/* media screen header */
 @media screen and (max-width: 520px) {
   header {
   flex-wrap: wrap;
@@ -120,7 +118,7 @@ color: #0065fc;
   border-top: none;
   }
 }
-/*-----------------------partie recherche--------------------******************************************-*/
+/*partie recherche*/
 main .recherche {
 margin: 1rem 0rem 2rem 0rem;
 }
@@ -167,15 +165,17 @@ border-left: none;
 padding: 1rem;
 font-weight: 600;
 font-size: 1rem;
+cursor: pointer;
 }
 .button .fa-search{
   display: none;
  }
-/*-----------------------FILTRES--------------------******************************-*/
+/*FILTRES*/
 #filtres {
 display: flex;
 flex-wrap: wrap;
 align-items: center;
+
 }
 .filtres {
 margin-right: 10px;
@@ -191,6 +191,7 @@ margin: 10px;
 background-color: var(--blanc);
 text-align: center;
 padding-right: 0.8rem;
+cursor: pointer;
 }
 .filtre:hover {
 background-color: var(--bleu-claire);
@@ -307,7 +308,7 @@ color: var(--bleu);
 .test{
 flex-grow: 1;
 }
-/*------********************-----------------aside----*****************************-----------------*/
+/*aside*/
 aside {
 background-color: var(--gris);
 width: 100%;
@@ -325,7 +326,6 @@ aside img{
 border-radius:1rem 0 0 1rem;
 width:10rem;
 height:10rem;
-object-fit: cover;
 align-self: stretch;
 }
 aside article {
@@ -347,14 +347,13 @@ margin: 1rem;
 .cartesHebergementsPopulaires{
 background-color: var(--blanc);
 box-shadow: 0 0 1rem #0000005e;
-transition-duration: 0.09s;
 border-radius:1rem;
 padding:0.3rem 0 0 0.3rem;
 width: 100%;
 display: flex;
 }
 
-/* media screen hébergement***********************************************************************/
+/* media screen hébergement*/
 
 @media screen and (max-width:1199px){
 .hebergements {
@@ -485,7 +484,7 @@ width: 0.8rem;
 .aside-header{
   padding: 0 1rem 1rem 0.5rem;
 }}
-/*-----------///////////------------activités-------//////////////////////--------------*/
+/*activités*/
 .carteActivity {
 border-radius: 1rem;
 box-shadow: 0 0 1rem #0000005e;
@@ -579,7 +578,7 @@ padding: 0 1rem 2rem 1rem;
 font-size: 1.2rem;
 }
 
-/*media screen activités********************************************/
+/*media screen activités*/
 
 @media screen and (max-width: 1000px){
 .activity img {
@@ -660,7 +659,7 @@ height: 78rem;
 .headr_activity{
   padding-top: 1rem;
 }}
-/*-----------------------footer---------------------*/
+/*footer*/
 footer {
 background-color: var(--gris);
 /*background-color: #0065fc;*/
@@ -687,7 +686,7 @@ margin-bottom: 0.7rem;
 color: var(--gris);
 font-size: 1.1rem;
 }
-/*---media screen footer****************************************************************************/
+/*media screen footer*/
 @media screen and (max-width:800px){
 .footer{
 flex-direction: column;
