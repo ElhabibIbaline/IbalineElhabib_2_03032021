@@ -13,6 +13,8 @@ width: 100%; /* taille du body!? */
 margin: 0 auto;
 background-color: var(--blanc);
 color: var(--noir);
+max-width:1700px;
+
 }
 :root {
 --bleu: #0065fc; /* couleur de la charte: le bleu*/
@@ -27,9 +29,10 @@ color: var(--noir);
 font-weight: 500;
 }
 header,
-main {
+main{
 width: 95%;
 margin: 0 auto;
+
 }
 h1 {
 font-size: 1.5rem;
@@ -647,7 +650,7 @@ font-size: 1rem;
   height: 49rem;
   }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 520px){
 .cartesActivity{
 display: flex;
 flex-direction: column;
@@ -688,11 +691,16 @@ font-size: 1.1rem;
 }
 /*media screen footer*/
 @media screen and (max-width:800px){
-.footer{
-flex-direction: column;
-padding: 2rem 0 2rem 1.5rem;
+  .footer_3 {
+    flex-basis: 100% ;
+    margin-right: 2rem;
+    }
+    .footer_2 {
+      margin-right: 2rem;
+      }
 }
-.footer_1, .footer_2, .footer_3{
-  width: 100%;
-}
-}
+@media screen and (max-width:520px){
+  .footer_1,.footer_2 {
+    flex-basis: 100% ;
+    }
+  }
