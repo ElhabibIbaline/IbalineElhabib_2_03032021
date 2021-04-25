@@ -14,7 +14,7 @@ color: var(--noir);
 }
 .wrapper{
   max-width:1500px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -365,7 +365,7 @@ justify-content: space-evenly;
 aside{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: repeat(2, 1fr );
+grid-template-rows: auto auto;
 grid-gap: 1rem;
 padding: 2rem;
 margin-bottom: 2rem;
@@ -451,7 +451,7 @@ grid-row: 5/6;
 .hebergementsMarseille{
 display: flex;
 flex-wrap: wrap;
-padding: 0.5rem;
+padding: 0rem;
 background-color: var(--blanc);
 }
 .cartesHebergementsMarseille{
@@ -462,7 +462,7 @@ width: 7rem;
 height: 11rem;
 }
 aside {
-padding:2rem;
+  padding: 1rem 0.7rem 1rem 0.7rem;
 border-radius: 0;
 }
 
@@ -670,7 +670,7 @@ width: 100%;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-padding: 2rem 0 2rem 2.5rem;
+padding: 2rem 0 2rem 0.5rem;
 }
 .footer_1, .footer_2, .footer_3 {
 flex-basis: 33% ;
@@ -696,9 +696,20 @@ font-size: 1.1rem;
     .footer_2 {
       margin-right: 2rem;
       }
+      .footer {
+        margin-left: 1rem;
+        padding-left: 1rem;                    
+        }
+        .footer h3 {
+          font-size: 1.3rem;
+          }
 }
 @media screen and (max-width:520px){
   .footer_1,.footer_2 {
     flex-basis: 100% ;
     }
+   /* .footer {
+      margin-left: 1rem;
+      padding-left: 1rem;
+      }*/
   }
