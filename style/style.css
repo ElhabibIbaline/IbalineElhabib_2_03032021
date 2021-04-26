@@ -12,11 +12,6 @@ font-family:"Raleway", serif;
 background-color: var(--blanc);
 color: var(--noir);
 }
-.wrapper{
-  max-width:1500px;
-  margin: 0 auto;
-}
-
 :root {
 --bleu: #0065fc; /* couleur de la charte: le bleu*/
 --bleu-claire: #deebff; /*la version claire du bleu*/
@@ -72,9 +67,7 @@ header img{
 }
 nav{
     display: flex;
-    text-align: right;
-
-    
+    text-align: right; 
 }
 .inscription{
     color: blue;
@@ -85,7 +78,7 @@ nav{
     padding: 2rem;
 }
 .lien:hover{
-border-top: 1.8rem;
+border-top: 2rem;
 padding-top: 1.8rem;
 border-top: 3px solid blue;
 color: blue;
@@ -253,11 +246,13 @@ display:grid;
 grid-template-columns: 6fr 3fr;
 grid-template-rows: minmax(30rem, 45rem);
 grid-column-gap: 2rem;
-margin: 2rem 0 2rem 0;
+margin: 2rem 1rem 2rem 0;
 }
  .hebergementsMarseille, .recherche, .activity, header{
-      padding:1rem;
+      padding:0rem 1rem;
     }
+    .hebergementsMarseille, aside{
+      margin: 0rem;}
 .hebergementsMarseille {
 background-color: var(--gris);
 padding: 2rem;
@@ -518,6 +513,8 @@ border-top-right-radius: 1rem;
 }
 .activity{
   height: 38rem;
+  padding: 0;
+  margin:0 auto;
   }
 .carteActivity:hover {
 transform: scale(1.009);
