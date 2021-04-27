@@ -53,7 +53,6 @@ margin: 0 auto;
 }
 
 header{
-
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -70,8 +69,9 @@ display: flex;
 text-align: right; 
 }
 .inscription{
-color: blue;
+color:var(--bleu);
 padding: 2rem 0 2rem 2rem;
+font-weight: 800;
 }
 .lien{
 text-decoration: none;
@@ -80,8 +80,8 @@ padding: 2rem;
 .lien:hover{
 border-top: 2rem;
 padding-top: 1.8rem;
-border-top: 3px solid blue;
-color: blue;
+border-top: 3px solid var(--bleu);
+color: var(--bleu);
 }
 @media screen and (max-width:600px) {
 .wrapper{
@@ -103,29 +103,30 @@ width: 100%;
 }
 .lien:hover{
 border-top: none;
-color: blue;
-border-bottom: 3px solid blue;
+color: var(--bleu);
+border-bottom: 4px solid var(--bleu);
 padding-top: 0rem;
 }
 .lien{
 padding: 0rem 1rem 1rem 1rem;
-
 width: 50%;
-border-bottom: 3px solid gray;
+border-bottom: 3px solid var(--gris);
 text-align: center;
 }
 }
 
 /*partie recherche*/
 main .recherche {
-margin: 1rem 0rem 2rem 0rem;
+margin: 2rem 0rem 2rem 0rem;
 }
 .recherche-header {
 margin-bottom: 1rem;
+font-weight:500;
 }
 .recherche-header p {
-color: gray;
+color: var(--noir);
 padding: 0.5rem 0 0.5rem 0;
+font-weight:500;
 }
 form {
 display: flex;
@@ -178,6 +179,8 @@ align-items: center;
 .filtres {
 margin-right: 10px;
 font-size: 1.3rem;
+font-weight: 800;
+
 }
 .economique,
 .familial,
@@ -190,6 +193,7 @@ background-color: var(--blanc);
 text-align: center;
 padding-right: 0.8rem;
 cursor: pointer;
+font-weight: 800;
 }
 .filtre:hover {
 background-color: var(--bleu-claire);
@@ -211,7 +215,7 @@ border-radius: 55px;
 .recherche-footer {
 background: none;
 margin-top: 1rem;
-color: gray;
+color: var(--noir);
 }
 /*media screen partie recherche-----------*********************/
 @media screen and (max-width: 520px) {
@@ -252,6 +256,10 @@ grid-template-rows: minmax(30rem, 45rem);
 grid-column-gap: 2rem;
 margin: 2rem 1rem 2rem 0;
 }
+.prixEuro{
+font-weight: 200;
+color:var(--noir);
+}
 .hebergementsMarseille, .recherche, .activity, header{
 padding:0rem 1rem;
 }
@@ -284,6 +292,7 @@ transform:scale(1.009);
 }
 .hebergementsMarseilleTitre{
 grid-column: 1/-1;
+font-weight: 900;
 }
 article img {
 border-radius:1rem 1rem 0 0;
@@ -293,17 +302,14 @@ object-fit:cover;
 }
 .hebergementsMarseillesInformations{
 padding:1rem 0.5rem 0.5rem 0.5rem;
+font-weight: 1000;
 }
 .prix {
 font-size:0.9rem;
-color: gray;
+color: var(--noir);
 font-family: "Raleway", serif;
 font-weight:inherit;
 padding: 0.5rem 0 0.5rem 0;;
-}
-.prixEuro{
-font-weight: bold;
-color:var(--noir);
 }
 .igray {
 color: gray;
@@ -469,12 +475,27 @@ flex-wrap: wrap;
 padding: 0.4rem;
 background-color: var(--blanc);
 }
+.prixEuro{
+font-weight: bold;
+color:var(--noir);
+}
 .cartesHebergementsMarseille{
 box-shadow:0 0 1rem #0000005e;
 }
+.hebergementsMarseille .fa-star {
+font-size: 0.9rem;
+width: 0.9rem;
+}
+.hebergementsMarseille p {
+font-size: 1rem;
+}
+.hebergementsMarseille h4 {
+font-weight: 1000;
+font-size: 1.1rem;
+}
 .imgP, .carte_9 img{
 width: 7rem;
-height: 11rem;
+height: 9rem;
 }
 
 aside {
@@ -492,12 +513,13 @@ padding-top: 0.7rem;
 font-size: 0.9rem;
 }
 aside .fa-star {
-font-size: 0.8rem;
-width: 0.8rem;
+font-size: 0.9rem;
+width: 0.9rem;
 }
 .hebergementsMarseilleTitre h2{
 padding: 1rem 0 0 0.5rem;
 font-size: 1.4rem;
+font-weight: 900;
 }
 .aside-header{
 padding: 0 1rem 1rem 0.5rem;
@@ -670,20 +692,29 @@ font-size: 1rem;
 height: 49rem;
 }
 }
-@media screen and (max-width: 520px){
+@media screen and (max-width: 580px){
 .cartesActivity{
 display: flex;
 flex-direction: column;
-height: 78rem;
 }
 .activity{
-height: 89rem;
+height: 87rem;
 margin:0 auto;
 padding: 0.3rem;
 }
-.headr_activity{
+.activity img{
+padding-bottom: 0.8rem;
+}
+.carteActivity_2 img, .carteActivity_6 img{
+padding-bottom:0;
+}
+.carteActivity_2 .site-activity h3{
+padding: 0.8rem 0 0.8rem 2rem;
+}
+.header_activity{
 padding-top: 1rem;
 }}
+
 /*footer*/
 footer {
 background-color: var(--gris);
