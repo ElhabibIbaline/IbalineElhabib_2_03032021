@@ -12,14 +12,7 @@ font-family:"Raleway", serif;
 background-color: var(--blanc);
 color: var(--noir);
 }
-:root {
---bleu: #0065fc; /* couleur de la charte: le bleu*/
---bleu-claire: #deebff; /*la version claire du bleu*/
---gris: #f2f2f2; /*3eme couleur de la charte le gris pour le fond*/
---blanc: #ffffff;
---noir: #000000;
---transparent: rgba(255, 255, 255, 0.4);
-}
+
 a {
 color: var(--noir);
 font-weight: 500;
@@ -45,6 +38,15 @@ font-weight: 100;
 }
 .fa-star {
 font-size: 0.9rem;
+}
+/*couleur*/
+:root {
+--bleu: #0065fc; 
+--bleu-claire: #deebff; 
+--gris: #f2f2f2; 
+--blanc: #ffffff;
+--noir: #000000;
+--transparent: rgba(255, 255, 255, 0.4);
 }
 /*header*/
 .wrapper{
@@ -83,6 +85,8 @@ padding-top: 1.8rem;
 border-top: 3px solid var(--bleu);
 color: var(--bleu);
 }
+
+/*@media screen header*/
 @media screen and (max-width:600px) {
 .wrapper{
 flex-wrap: wrap;
@@ -174,13 +178,11 @@ display: none;
 display: flex;
 flex-wrap: wrap;
 align-items: center;
-
 }
 .filtres {
 margin-right: 10px;
 font-size: 1.3rem;
 font-weight: 800;
-
 }
 .economique,
 .familial,
@@ -302,7 +304,7 @@ object-fit:cover;
 }
 .hebergementsMarseillesInformations{
 padding:1rem 0.5rem 0.5rem 0.5rem;
-font-weight: 1000;
+font-weight: 900;
 }
 .prix {
 font-size:0.9rem;
@@ -490,7 +492,7 @@ width: 0.9rem;
 font-size: 1rem;
 }
 .hebergementsMarseille h4 {
-font-weight: 1000;
+font-weight: 900;
 font-size: 1.1rem;
 }
 .imgP, .carte_9 img{
