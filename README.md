@@ -17,8 +17,7 @@ Contraintes techniques et recommandations:
 - Ne pas utiliser de framework ou pré-compilateur CSS pour ce projet;
 - Apprendre à coder from scratch.
 - Il est recommandé d'utiliser Visual Studio Code.
-- il est conseillé d'utiliser Flexbox et/ou CSS Grid,
-- il faut utiliser des balises sémantiques et le code ne doit contenir 
-- Aucune erreur ni alerte au validateur W3C HTML et CSS.
+- Il est conseillé d'utiliser Flexbox et/ou CSS Grid,
+- Il faut utiliser des balises sémantiques et le code ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.
 - Le site devra être compatible avec les dernières versions de Chrome et Firefox.
 - Séparer le HTML et le CSS .
