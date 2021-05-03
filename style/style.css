@@ -274,7 +274,7 @@ button {
 	justify-content: space-between;
 	width: 100%;
 	border-radius: 1.5rem;
-	box-shadow: 0 0 1rem #0000005e;
+	box-shadow: 0 0 1rem #0000003e;
 }
 .hebergements .prix {
 	font-size: 1rem;
@@ -351,21 +351,22 @@ aside article {
 
 .cartesHebergementsPopulaires {
 	background-color: var(--blanc);
-	box-shadow: 0 0 1rem #0000005e;
+	box-shadow: 0 0 1rem #0000003e;
 	border-radius: 1rem;
-	padding: 0.3rem 0 0.1rem 0.3rem;
+	padding: 0.3rem;
 	width: 100%;
 	max-width: 26rem;
 	min-width: 11rem;
-	height: auto;
+	height: 11rem;
 	display: flex;
 	margin: 1rem 0;
 }
 
 .hebergementPopulairesImg img {
-	width: 100%;
-	max-width: 75%;
-	height: 10rem;
+	/*width: 100%;
+	max-width: 75%;*/
+	height:100%;
+	width:9.5rem;
 	object-fit: cover;
 	border-radius: 1rem 0 0 1rem;
 }
@@ -373,10 +374,9 @@ aside article {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-left: -3rem;
 	padding: 1rem;
 	align-items: flex-start;
-	width: 150%;
+	width: 80%;
 }
 .hebergementsPopulairesInformations h4 {
 	font-size: 1.1rem;
@@ -438,17 +438,8 @@ aside article {
 		font-size: 1.5rem;
 	}
 	.cartesHebergementsPopulaires img {
-		width: 100%;
-		max-width: 90%;
-		height: 100%;
-		object-fit: cover;
+		width: 15rem;
 		padding-right: 1rem;
-	}
-	.hebergementsPopulairesInformations {
-		justify-content: space-between;
-		padding: 1rem;
-		max-width: 60%;
-		min-width: 10%;
 	}
 	.cartesHebergementsPopulaires {
 		max-width: 100%;
@@ -514,7 +505,8 @@ aside article {
 		font-weight: 900;
 	}
 	.cartesHebergementsMarseille {
-		box-shadow: 0 0 1rem #0000005e;
+	box-shadow: 0 0 1rem #0000002e;
+		  border: 1px solid var(--gris);
 	}
 	.hebergementsMarseille .fa-star {
 		font-size: 1rem;
@@ -532,23 +524,20 @@ aside article {
 		border-radius: 0;
 		margin: 0 auto;
 		width: 100%;
-		padding: 1rem;
 	}
 	.cartesHebergementsPopulaires {
 		margin: 0.3rem 0;
+		box-shadow: none;
+		  border: 2px solid var(--gris);
 	}
+	
 	.cartesHebergementsPopulaires img {
-		width: 100%;
-		max-width: 80%;
+		width: 80%;
 		height: 100%;
-		object-fit: cover;
-		padding-bottom: 0.2rem;
 	}
 	.hebergementsPopulairesInformations {
-		justify-content: space-between;
-		padding: 1rem 0.5rem 1rem 0.5rem;
-		max-width: 80%;
-		min-width: 10%;
+margin-left: -3rem;
+
 	}
 	.cartesHebergementsPopulaires h4 {
 		font-size: 1.1rem;
@@ -575,11 +564,11 @@ aside article {
 /*activités*/
 .carteActivity {
 	border-radius: 1rem;
-	box-shadow: 0 0 1rem #0000005e;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-content: center;
+		box-shadow: 0 0 1rem #0000003e;
 }
 .cartesActivity {
 	display: grid;
@@ -757,6 +746,7 @@ aside article {
 		height: 88rem;
 		margin: 0 auto;
 		padding: 1rem;
+	  
 	}
 	.activity h2 {
 		font-size: 1.7rem;
@@ -768,6 +758,11 @@ aside article {
 	.carteActivity_2 img,
 	.carteActivity_6 img {
 		padding-bottom: 0;
+		  box-shadow: none;
+	}
+		.carteActivity{
+		box-shadow: 0 0 1rem #0000002e;
+		  border: 2px solid var(--gris);
 	}
 	.carteActivity_2 .site-activity h3 {
 		padding: 0.8rem 0 0.8rem 2rem;
