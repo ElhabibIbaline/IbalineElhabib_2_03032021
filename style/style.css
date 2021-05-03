@@ -64,6 +64,11 @@ nav {
 }
 
 /*@media screen header*/
+@media screen and (max-width: 1200px) {
+	header {
+		padding: 0.5rem;
+	}
+}
 @media screen and (max-width: 600px) {
 	.wrapper {
 		flex-wrap: wrap;
@@ -97,8 +102,9 @@ nav {
 }
 
 /*partie recherche*/
-main .recherche {
+.recherche {
 	margin: 2rem 0rem 2rem 0rem;
+	padding: 0;
 }
 .recherche-header {
 	margin-bottom: 1rem;
@@ -197,9 +203,15 @@ button {
 	color: var(--noir);
 }
 /*media screen partie recherche-----------*********************/
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 1200px) {
 	.recherche {
-		padding: 0.5rem;
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.recherche {
+		padding: 1rem;
 	}
 	.recherche p {
 		padding: 1rem 0 1rem 0;
@@ -243,16 +255,7 @@ button {
 .euro {
 	font-weight: 900;
 }
-.hebergementsMarseille,
-.recherche,
-.activity,
-header {
-	padding: 0rem 1rem;
-}
-.hebergementsMarseille,
-aside {
-	margin: 0rem;
-}
+
 .hebergementsMarseille {
 	background-color: var(--gris);
 	padding: 2rem;
@@ -500,7 +503,7 @@ aside article {
 	.hebergementsMarseille {
 		display: flex;
 		flex-wrap: wrap;
-		padding: 0.4rem;
+		padding: 1rem;
 		background-color: var(--blanc);
 	}
 	.prixEuro {
@@ -524,10 +527,12 @@ aside article {
 		font-weight: bold;
 		font-size: 1.5rem;
 	}
-
 	aside {
-		padding: 2rem 0.8rem 2.5rem 0.6rem;
+		padding: 2rem 1rem 2rem 1rem;
 		border-radius: 0;
+		margin: 0 auto;
+		width: 100%;
+		padding: 1rem;
 	}
 	.cartesHebergementsPopulaires {
 		margin: 0.3rem 0;
@@ -537,16 +542,16 @@ aside article {
 		max-width: 80%;
 		height: 100%;
 		object-fit: cover;
-		padding-bottom: 0.3rem;
+		padding-bottom: 0.2rem;
 	}
 	.hebergementsPopulairesInformations {
 		justify-content: space-between;
-		padding: 1rem 0;
+		padding: 1rem 0.5rem 1rem 0.5rem;
 		max-width: 80%;
 		min-width: 10%;
 	}
 	.cartesHebergementsPopulaires h4 {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		font-weight: 900;
 	}
 	.hebergementsPopulairesInformations .prix {
@@ -595,7 +600,7 @@ aside article {
 .activity {
 	height: 38rem;
 	padding: 0;
-	margin: 0 auto;
+	margin: 2rem auto;
 }
 .carteActivity:hover {
 	transform: scale(1.009);
@@ -681,7 +686,7 @@ aside article {
 		border-radius: 1rem;
 		height: 13rem;
 	}
-	
+
 	.carteActivity_1 {
 		grid-column: 1/2;
 		grid-row: 1/2;
@@ -709,10 +714,10 @@ aside article {
 		grid-row: 2/3;
 		margin-top: 0;
 	}
-		.site-activity h3{
+	.site-activity h3 {
 		padding: 0.3rem 1.5rem 1.5rem 1rem;
 	}
-	.carteActivity_2 .site-activity h3{
+	.carteActivity_2 .site-activity h3 {
 		margin: 0 1rem 3rem 0;
 		padding: 1rem;
 	}
@@ -749,9 +754,9 @@ aside article {
 		flex-direction: column;
 	}
 	.activity {
-		height: 87rem;
+		height: 88rem;
 		margin: 0 auto;
-		padding: 0.3rem;
+		padding: 1rem;
 	}
 	.activity h2 {
 		font-size: 1.7rem;
@@ -782,7 +787,7 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 2rem 0 2rem 1rem;
+	padding: 2rem 1rem;
 }
 .footer_1,
 .footer_2,
@@ -819,6 +824,9 @@ footer li {
 	}
 }
 @media screen and (max-width: 560px) {
+	.footer {
+		margin-top: 2rem;
+	}
 	.footer_1,
 	.footer_2 {
 		flex-basis: 100%;
